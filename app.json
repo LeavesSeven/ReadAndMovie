@@ -8,9 +8,6 @@
     "pages/more-movie/more-movie",
     "pages/movie-detail/movie-detail",
     "pages/postx/postx",
-    "pages/position/position",
-    "pages/me/me",
-    "pages/city/city",
     "pages/test/test"
   ],
   "entryPagePath": "",
