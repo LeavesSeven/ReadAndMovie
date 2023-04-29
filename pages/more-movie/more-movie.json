@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "movie":"/componengts/movie/index"
+  },
+  "enablePullDownRefresh": true
+}

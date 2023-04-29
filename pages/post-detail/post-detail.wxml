@@ -1,0 +1,31 @@
+<!--pages/post-detail/post-detail.wxml-->
+
+<view class="container">
+  <!-- 注意看设计图需要的样式 -->
+  <image class="head-image" src="{{postData.headImgSrc}}"></image>
+  <view class="author-date">
+    <image class="avater" src="{{postData.avatar}}"></image>
+    <text class="author">{{postData.author}}</text>
+    <text class="const-text">发表于</text>
+    <text class="date">{{postData.dateTime}}</text>
+  </view>
+  <text class="title">{{postData.title}}</text>
+  <view>
+    <view class="tool">
+      <view class="circle">
+        <!-- <image class="circle-img" src="/images/icon/collection.png"></image> -->
+        <!-- <image class="circle-img" src="/images/icon/share.png"></image> -->
+        <!-- 7-6 选择器选择容器下的所有图片 -->
+        <!--8-7 收藏事件的回调函数-->
+        <!-- 8-9 条件渲染wx:if -->
+        <image wx:if="{{!collected}}" bind:tap="onCollect" src="/images/icon/collection-anti.png"></image>
+        <image wx:else bind:tap="onCollect" src="/images/icon/collection.png"></image>
+        <!-- 8-17 捕捉点击分享按钮（bind:tap） -->
+        <image bind:tap='onShare' class="share-img" src="/images/icon/share.png"></image>
+      </view>
+      <view class="horizon"></view>
+      <!--7-4实现横线-->
+    </view>
+  </view>
+  <text class="detail">{{postData.detail}}</text>
+</view>

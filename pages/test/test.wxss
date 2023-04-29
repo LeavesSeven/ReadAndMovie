@@ -1,0 +1,15 @@
+.journey-container{
+  border:1px solid #405f80;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 200rpx;
+}
+
+.journey{
+  font-size: 22rpx;
+  color: #405f80;
+  line-height: 80rpx;
+  font-weight: bold;
+}

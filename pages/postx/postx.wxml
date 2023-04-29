@@ -1,0 +1,23 @@
+<!--pages/postx/postx.wxml-->
+
+<view>
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" vertical="{{false}}" circular interval="{{3000}}">
+  <swiper-item>
+    <image data-post-id="3" bind:tap="onGoToDetail" src="/images/test/jiguandong1.jpg">
+    </image>
+  </swiper-item>
+  <swiper-item>
+    <image data-post-id="0" bind:tap="onGoToDetail" src="/images/test/xiangbishan.jpg">
+    </image>
+  </swiper-item>
+  <swiper-item>
+    <image data-post-id="4" bind:tap="onGoToDetail" src="/images/test/huanglongfengjing.jpg">
+    </image>
+  </swiper-item>
+</swiper>
+
+<block wx:for="{{local_database}}" wx:key="index" wx:for-item="item">
+  <post bind:posttap="onGoToDetail" res="{{item}}" />
+</block>
+
+</view>

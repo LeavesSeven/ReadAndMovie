@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "movie-list":"/componengts/movie-list/index",
+    "l-search-bar":"/miniprogram_npm/lin-ui/search-bar/index",
+    "movie":"/componengts/movie/index"
+  },
+  "navigationBarTitleText": "光与影"
+}

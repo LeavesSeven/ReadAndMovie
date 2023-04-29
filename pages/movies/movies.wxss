@@ -1,0 +1,31 @@
+/* pages/movies/movies.wxss */
+
+/* movie-list样式 */
+.movie-list{
+  /*自定义组件里设置普通的class会导致margin无效*/
+  margin-bottom: 30rpx;
+  /* !important抢占优先级 */
+  /* background-color: teal !important; */
+}
+
+.ex-search-bar{
+  height: 90rpx !important;
+}
+
+.search-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  /*换行*/
+  padding: 30rpx 28rpx;  /*内边距*/
+  justify-content: space-between; /*平均分布*/
+}
+
+.search-container::after{
+  content:'';
+  width:200rpx
+}
+
+page{
+  background-color:#f2f2f2;
+  /* background-color:teal; */
+}

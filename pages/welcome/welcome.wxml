@@ -1,0 +1,19 @@
+<!-- view和div一样，起到容器、分隔文档的作用 -->
+<view class="container">
+
+  <!-- <image class="avatar" src="/images/202010103028谭惠平.jpg"></image> -->
+
+  <l-avatar class="l-avatar" placement="bottom" shape="circle" open-data="{{['userAvatarUrl','userNickName']}}" size="200" />
+
+  <text class="motto">Hello,叶子</text>
+
+  <!-- 5-17 bind实现页面跳转 -->
+  <!-- <view bind:tap="onTap" class="journey-container"> -->
+  <!-- 6-3 catch和bind -->
+  <view catch:tap="onViewTap" class="journey-container">
+    <!-- <text bind:tap="onTextTap" class="journey">开启摄影之旅</text> -->
+    <text catch:tap="onTextTap" class="journey">开启小程序之旅</text>
+  </view>
+</view>
+
+<!-- flex 容器布局 -->
